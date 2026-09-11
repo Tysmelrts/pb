@@ -7146,7 +7146,7 @@
 7145;89;126;211;land;true;hills;6
 7146;89;129;26;land;false;hills;6
 7147;89;129;176;land;true;hills;1
-7148;89;132;91;land;false;desert;5
+7148;146;210;108;land;false;desert;5
 7149;89;132;141;land;false;hills;5
 7150;89;132;196;land;true;plains;6
 7151;89;135;56;land;false;mountain;7
@@ -13413,12 +13413,12 @@
 13412;243;251;68;land;true;plains;6
 13413;171;238;52;land;true;urban;1
 ### MODIFIED AFRICA ###
-13414;182;124;207;land;false;desert;5
-13415;173;58;79;land;false;desert;5
+13414;217;195;48;land;false;desert;5
+13415;25;87;65;land;false;desert;5
 13416;19;126;20;land;false;desert;5
 13417;140;151;217;land;false;desert;5
 13418;78;152;183;land;false;desert;5
-13419;16;249;123;land;false;desert;5
+13419;42;162;161;land;false;desert;5
 13420;14;81;16;land;false;desert;5
 13421;41;46;166;land;false;desert;5
 13422;218;131;157;land;false;desert;5
@@ -13443,9 +13443,9 @@
 13441;182;23;159;land;false;desert;5
 13442;179;43;151;land;false;desert;5
 13443;28;193;223;land;false;desert;5
-13444;170;239;52;land;false;desert;5
+13444;187;16;29;land;false;desert;5
 13445;190;49;246;land;false;desert;5
-13446;202;134;46;land;false;desert;5
+13446;28;81;142;land;false;desert;5
 13447;167;177;106;land;false;desert;5
 13448;67;252;168;land;false;desert;5
 13449;99;144;238;land;false;desert;5
@@ -13470,11 +13470,5 @@
 13468;48;191;16;land;false;desert;5
 13469;100;217;228;land;false;desert;5
 13470;47;117;33;land;false;desert;5
-13471;28;81;142;land;false;desert;5
-13472;187;16;29;land;false;desert;5
-13473;42;162;161;land;false;desert;5
-13474;25;87;65;land;false;desert;5
-13475;217;195;48;land;false;desert;5
-13476;146;210;108;land;false;desert;5
 
 ### MODIFIED AFRICA ###
