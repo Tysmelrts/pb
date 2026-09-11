@@ -1,5 +1,6 @@
 autonomy_state = {
 	id = autonomy_reichskommissariat
+	use_overlord_color = yes
 	
 	is_puppet = yes
 	

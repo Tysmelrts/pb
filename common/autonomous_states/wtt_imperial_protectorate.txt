@@ -1,9 +1,9 @@
 autonomy_state = {
 	id = autonomy_wtt_imperial_protectorate
+	use_overlord_color = yes
 	
 	default = yes
 	is_puppet = yes
-	use_overlord_color = yes
 	
 	min_freedom_level = 0.2
 	

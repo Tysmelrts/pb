@@ -9,7 +9,7 @@ state = {
 
 	history = {
 
-		owner = ENG
+		owner = OBG
 		add_core_of = EGY
 
 		buildings = {
