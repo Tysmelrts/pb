@@ -1,0 +1,23 @@
+SpriteTypes = {
+	SpriteType = {
+	name = "GFX_goal_ger_reichsarbeitsdienst"
+	texturefile = "gfx/interface/goals/ger/goal_ger_reichsarbeitsdienst.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_ger_reichsarbeitsdienstexpand"
+	texturefile = "gfx/interface/goals/ger/goal_ger_reichsarbeitsdienstexpand.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_defence_economy_and_armament_office"
+	texturefile = "gfx/interface/goals/ger/goal_defence_economy_and_armament_office.dds"		
+	}
+	SpriteType = {
+	name = "GFX_GER_align_romania"
+	texturefile = "gfx/interface/goals/ger/GER_align_romania.dds"		
+	}
+	SpriteType = {
+	name = "GFX_GER_hungary"
+	texturefile = "gfx/interface/goals/GER_hungary.dds"		
+	}
+}
+	

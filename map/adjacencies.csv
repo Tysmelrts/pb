@@ -250,6 +250,23 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10231;12995;impassable;-1;-1;-1;-1;-1;;Kokoda Track
 13401;13396;sea;436;-1;-1;-1;-1;;Aceh-Islands
 1428;13395;sea;812;-1;-1;-1;-1;;Padang-Islands
+12884;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
+12884;10802;impassable;-1;-1;-1;-1;-1;;Himalayas
+7273;10802;impassable;-1;-1;-1;-1;-1;;Himalayas
+5042;10802;impassable;-1;-1;-1;-1;-1;;Himalayas
+5042;12801;impassable;-1;-1;-1;-1;-1;;Himalayas
+5042;4973;impassable;-1;-1;-1;-1;-1;;Himalayas
+5042;8112;impassable;-1;-1;-1;-1;-1;;Himalayas
+5042;1970;impassable;-1;-1;-1;-1;-1;;Himalayas
+10821;1970;impassable;-1;-1;-1;-1;-1;;Himalayas
+10821;5087;impassable;-1;-1;-1;-1;-1;;Himalayas
+12892;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
+12892;4900;impassable;-1;-1;-1;-1;-1;;Himalayas
+4435;4900;impassable;-1;-1;-1;-1;-1;;Himalayas
+4435;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
+8010;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
+12860;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
+10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 -1;-1;;-1;-1;-1;-1;-1;-1 
 #Start province ID;End province ID;Adjacency type;Through province ID;Starting X position;Starting Y position;Ending X position;Ending Y position;Adjacency rule;Comment
 

@@ -1,0 +1,43 @@
+SpriteTypes = {
+
+     SpriteType = { 
+	 name = "GFX_idea_japanese_closed_eco"
+	 texturefile = "gfx/interface/ideas/Japanese_Tides_eco.dds"
+	 }
+	 
+	 SpriteType = {
+	 name = "GFX_idea_russian_closed_eco"
+	 texturefile = "gfx/interface/ideas/idea_russian_closed_eco.dds"
+	 }
+
+	 SpriteType = {
+	 name = "GFX_idea_jap_militarism_showa"
+	 texturefile = "gfx/interface/ideas/idea_jap_militarism_showa.dds"
+	 }
+
+	 SpriteType = {
+	 name = "GFX_idea_man_militarism"
+	 texturefile = "gfx/interface/ideas/idea_man_militarism.dds"
+	 }
+
+	  SpriteType = {
+	 name = "GFX_idea_jap_island_hopping"
+	 texturefile = "gfx/interface/ideas/ideas_jap_island_hopping.dds"
+	 }
+
+	  SpriteType = {
+	 name = "GFX_idea_usa_island_hopping"
+	 texturefile = "gfx/interface/ideas/ideas_usa_island_hopping.dds"
+	 }
+	 
+	 SpriteType = {
+		name = "GFX_NKVD"
+		texturefile = "interface/ideas/nkvd.dds"
+	 }
+
+	 SpriteType = {
+		name = "GFX_idea_lions_of_the_great_war"
+		texturefile = "gfx/interface/ideas/lions_of_the_great_war.dds"
+	 }
+
+}

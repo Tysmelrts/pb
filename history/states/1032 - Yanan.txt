@@ -7,8 +7,8 @@ state = {
 
 	history = {
 
-		owner = PRC
-		add_core_of = PRC
+		owner = CHI
+		add_core_of = CHI
 		add_core_of = CHI
 
 		1936.1.1 = {
@@ -16,13 +16,9 @@ state = {
 				limit = {
 					has_dlc = "No Compromise, No Surrender"
 				}
-				transfer_state_to = XIC
-				add_core_of = XIC
+				transfer_state_to = CHI
+				add_core_of = CHI
 			}
-		}
-
-		victory_points = {
-			8049 3 # Yanan
 		}
 
 		buildings = {

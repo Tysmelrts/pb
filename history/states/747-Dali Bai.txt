@@ -8,18 +8,11 @@ state = {
 
 	history = {
 
-		owner = YUN
-		add_core_of = YUN
+		owner = CHI
+		add_core_of = CHI
 		add_core_of = CHI
 		add_core_of = PRC
 
-		victory_points = {
-			7965 3 # Dali 
-		}
-
-		victory_points = {
-			10863 1 # Heshun  
-		}
 
 		buildings = {
 			infrastructure = 2

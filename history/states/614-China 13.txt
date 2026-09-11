@@ -25,8 +25,8 @@ state={
 				limit = {
 					has_dlc = "No Compromise, No Surrender"
 				}
-				transfer_state_to = HBC
-				add_core_of = HBC
+				transfer_state_to = CHI
+				add_core_of = CHI
 			}
 		}
 		
