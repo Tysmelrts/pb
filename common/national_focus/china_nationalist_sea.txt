@@ -96,6 +96,7 @@ focus_tree = {
 		#relative_position_id = 
 		cost = 5
 		available = {
+			is_ai = yes
 		}
 		allow_branch = {
 			if = {
@@ -290,6 +291,7 @@ focus_tree = {
 		}
 		cost = 5
 		available = {
+			NOT = { is_ai = yes }
 			is_subject = no
 			JAP = {
 				has_active_mission = JAP_kwantung_army_impatience
@@ -1281,6 +1283,7 @@ focus_tree = {
 		relative_position_id = CHI_a_functioning_bureaucracy_first
 		cost = 10
 		available = {
+			NOT = { is_ai = yes }
 		}
 	
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -4024,6 +4027,7 @@ focus_tree = {
 		relative_position_id = CHI_towards_a_professional_army
 		cost = 5
 		available = {
+			NOT = { is_ai = yes }
 		}
 	
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT}
@@ -4064,6 +4068,9 @@ focus_tree = {
 		x = -7
 		y = 1
 		relative_position_id = CHI_the_sky_cannot_have_two_suns
+		available = {
+			NOT = { is_ai = yes }
+		}
 		offset = {
 			x = 2
 			y = 0
@@ -5087,6 +5094,7 @@ focus_tree = {
 		relative_position_id = CHI_promote_the_national_currency
 		cost = 5
 		available = {
+			NOT = { is_ai = yes }
 		}
 			   	 
 		search_filters = {FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ARMY_XP}
@@ -5387,6 +5395,7 @@ focus_tree = {
 		relative_position_id = CHI_military_affairs_commission_sea
 		cost = 10
 		available = {
+			is_ai = yes
 			OR = {
 				AND = {
 					has_completed_focus = CHI_decisive_battles
@@ -5446,6 +5455,7 @@ focus_tree = {
 		relative_position_id = CHI_military_affairs_commission_sea
 		cost = 10
 		available = {
+			is_ai = yes
 			OR = {
 				AND = {
 					has_completed_focus = CHI_protracted_warfare
@@ -6742,6 +6752,7 @@ focus_tree = {
 		
 		cost = 5
 		available = {
+			is_ai = yes
 		}
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }

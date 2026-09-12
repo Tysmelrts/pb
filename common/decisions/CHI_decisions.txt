@@ -6443,7 +6443,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_1
-			
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -6477,10 +6477,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -6593,6 +6593,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_2
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -6626,10 +6627,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -6742,6 +6743,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_3
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -6775,10 +6777,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -6891,6 +6893,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_4
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -6924,10 +6927,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7040,6 +7043,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_5
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -7073,10 +7077,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7189,6 +7193,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_6
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -7222,10 +7227,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7338,6 +7343,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_7
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -7371,10 +7377,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7487,6 +7493,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_8
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -7520,10 +7527,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7636,6 +7643,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_9
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -7669,10 +7677,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7785,6 +7793,7 @@ CHI_internal_politics_cat = {
 
 		timeout_effect = {
 			set_country_flag = Completed_warlord_eco_focuses_10_finished
+			load_oob = "CHI_economy_oob"
 			618 = {
 				add_resource = {
 					type = oil
@@ -7818,10 +7827,10 @@ CHI_internal_politics_cat = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}

@@ -19,6 +19,7 @@ state = {
 		add_core_of = ANU
 
 		buildings = {
+			industrial_complex = 3
 			infrastructure = 2
 		}
 
