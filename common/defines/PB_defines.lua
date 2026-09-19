@@ -1,181 +1,124 @@
-NDefines = {
 
-NGame = {
-    LAG_DAYS_FOR_LOWER_SPEED = 120,					-- Days of client lag for decrease of gamespeed
-	LAG_DAYS_FOR_PAUSE = 60,						-- Days of client lag for pause of gamespeed.
-	GAME_SPEED_SECONDS = { 2.0, 0.3, 0.20, 0.07, 0.0 }, -- game speeds for each level. Must be 5 entries with last one 0 for unbound
-	MAJOR_PARTICIPANTS_FOR_MAJOR_WAR = 3,			-- Minimum number of major countries involved in a war to consider it major enough to not end the game even though the enddate has been reached.
-	TRADE_ROUTE_RECALCULATE_FREQUENCY_DAYS = 45, -- Max recalculation time for all trade routes (0 means we do not recalucate prediodically trade routes)
-	COMBAT_LOG_MAX_MONTHS = 36,
-	EVENT_TIMEOUT_DEFAULT = 15,						-- Default days before an event times out if not scripted
-	MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15,		-- Default days before a mission is removed from the interface after having failed or completed
-	MAX_EFFECT_ITERATION = 1000,					-- maximum allowed iteration for loop effects
-	MAX_SCRIPTED_LOC_RECURSION = 30,				-- max recursion for scripted localizations
-	HANDS_OFF_START_TAG = "GER",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
-},
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 120				-- Days of client lag for decrease of gamespeed
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60				-- Days of client lag for pause of gamespeed.
+NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.3, 0.20, 0.07, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
+NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 15						-- Default days before an event times out if not scripted
+NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15		-- Default days before a mission is removed from the interface after having failed or completed
+NDefines.NGame.HANDS_OFF_START_TAG = "GER"
 
-NDiplomacy = {
-    WARGOAL_COST_LEND_LEASE = 0.0                -- cost modifier to wargoaljustification for LL
-    WARGOAL_COST_DOCKING_RIGHTS = 0.0             -- cost modifier to wargoaljustification for dockign rights
-    WARGOAL_COST_VOLUNTEERS = 0.00                 -- cost modifier to wargoaljustification for volunteers
-    DIPLOMACY_ACCEPT_ATTACHE_BASE = 10000		--AI automatically accepts attache
-    EMBARGO_COST = 6000		-- make it so you cant embargo anyone
-    REVOKE_EMBARGO_COST = 6000		-- make it so you cant revoke embargo
-},
+NDefines.NDiplomacy.WARGOAL_WORLD_TENSION_REDUCTION = -0.25			-- Reduction of pp cost for wargoal at 100% world tension scales linearlyNDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.00	-- was 0.04		-- Each province owned by the target country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1					--	Returning volunteers keep this much equipment
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.00	-- was 0.04		-- Each province owned by the target country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.00	--was 0.04  	-- Each army unit owned by the source country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.TENSION_PEACE_FACTOR = 0.1				-- scale of the amount of tension (from war declaration) reduced when peace is completed.
+NDefines.NDiplomacy.TENSION_CAPITULATE = 1		-- Number of human players as losers needed for peace conference to pause and open for everyone in multiplayer needs to fullfill MP_NUM_WINNERS_FOR_PEACE_PAUSE as well.
+NDefines.NDiplomacy.JOINING_NAP_WAR_PENALTY = 0.3			-- War support penalty for breaking non-breakable NAP
+NDefines.NDiplomacy.RESOURCE_SENT_AUTONOMY_DAILY_FACTOR = 0.0	-- If puppet provides resources to its master they increasy their autonomy by the resources factored by this
+NDefines.NDiplomacy.WARGOAL_COST_LEND_LEASE = 0.0                -- cost modifier to wargoaljustification for LL
+NDefines.NDiplomacy.WARGOAL_COST_DOCKING_RIGHTS = 0.0             -- cost modifier to wargoaljustification for dockign rights
+NDefines.NDiplomacy.WARGOAL_COST_VOLUNTEERS = 0.00                 -- cost modifier to wargoaljustification for volunteers
+NDefines.NDiplomacy.PEACE_ACTION_MAX_COST = 500					-- Max value for a peace action cost (after all modifiers)
+NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE	= 300			-- extra bonus when deciding who to capitulate to (applied to capital holder)
+NDefines.NDiplomacy.VICTORY_POINT_WORTH_FACTOR_WARSCORE = 0.5		-- multiplier for each victory points when calculating province worth for warscore
+NDefines.NDiplomacy.EMBARGO_COST = 6000		-- make it so you cant embargo anyone
+NDefines.NDiplomacy.REVOKE_EMBARGO_COST = 6000		-- make it so you cant revoke embargo
+NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = 0 	
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 10000		--AI automatically accepts attache
+NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
+NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 999			-- originally 30
+NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
+NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
+NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0				-- 	AI should be unwilling to enter accept a call to war if front is too dangerous.
+NDefines.NDiplomacy.NOT_READY_FOR_WAR_BASE = 0			-- 	AI should be unwilling to enter accept a call to war if not ready for war against the relevant enemies.
+NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12				-- 	How long a country must wait before sending a new diplomatic request.
+NDefines.NDiplomacy.MIN_TRUST_VALUE = -600 							-- WAS -100 | this is added to support embargoing nations to prevent trade memes from players in an opposing faction | Min opinion value cap.
 
-NCountry = {
-    MIN_SURRENDER_LIMIT = 0.1						-- Minimum non-forced surrender limit. valid 0-1
-    POLITICAL_POWER_CAP = 9999.0					-- Max amount of political power country should have
-    BASE_MAX_COMMAND_POWER = 250.0					-- base value for maximum command power
-    AIR_SUPPLY_CONVERSION_SCALE = 0.15				-- Conversion scale for planes to air supply
-    GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
-    GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
-    GIE_DIVISION_ATTACK_BONUS_ON_CORE = 0.05 -- Attack bonus factor when fighting on cores.
-    GIE_DIVISION_DEFENSE_BONUS_ON_CORE = 0.05 -- Defense bonus factor when fighting on cores.
-    FUEL_LEASE_CONVOY_RATIO = 0.0002			-- num convoys needed per fuel land lease
-    INTEL_FROM_ALLIANCE_FACTOR = 1 --was 0.3  	-- 	Multiplied to the difference between a country intel and the maximum value in the alliance to compute the amount of intel that flows from the alliance to that country.
-    SCORCHED_EARTH_STATE_COST = 5000				-- pp cost to scorch a state
-},
+NDefines.NCountry.BASE_STABILITY_WAR_FACTOR = -0.15				-- Default stability war factor
+NDefines.NCountry.BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0.20	-- Default stability rulling party popularity factor
+NDefines.NCountry.WAR_SUPPORT_OFFNSIVE_WAR = -0.1				-- Impact of being in offensive war
+NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.2				-- Impact of being in defensive war
+NDefines.NCountry.MAJOR_MIN_FACTORIES = 200						-- need at least these many factories to become a major
+NDefines.NCountry.POLITICAL_POWER_CAP = 9999.0					-- Max amount of political power country should have
+NDefines.NCountry.MIN_MAJOR_COUNTRIES	= 6						-- MIN_MAJOR_COUNTRIES countries with most factories will be considered as major countries
+NDefines.NCountry.MIN_SURRENDER_LIMIT = 0.1						-- Minimum non-forced surrender limit. valid 0-1
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.15				-- Conversion scale for planes to air supply
+NDefines.NCountry.BASE_MAX_COMMAND_POWER = 250.0					-- base value for maximum command power
+NDefines.NCountry.ATTACHE_XP_SHARE = 0.15							-- Country received xp from attaches
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 50					-- You can have a minimum of this many special forces battalions regardless of the number of non-special forces battalions you have this can also be modified by a country modifier
+NDefines.NCountry.COUNTRY_MANPOWER_CAPITULATED_CORE_GAIN_FACTOR = 0.002	-- Factor on amount of normal manpower gained for the exile nation. From owned states that are controlled by an enemy. State manpower reduced by factor 1000 in code.
+NDefines.NCountry.GIE_CAPITULATE_MAX_STOCKPILE_TRANSFER = 0.5 			-- 0-1 Transfers ratio of stockpile. from 0 to this define depending on starting legitimacy on capitulation.
+NDefines.NCountry.GIE_CAPITULATION_WARSCORE_LEGITIMACY_FACTOR = 1.5 	--Multiplies accumulated warscore with this factor for part of starting legitimacy.
+NDefines.NCountry.GIE_WARSCORE_GAIN_LEGITIMACY_FACTOR = 1.5		 		--Factor on how much legitimacy is gained from warscore earned by GiE units.
+NDefines.NCountry.GIE_HOST_CIC_FROM_LEGITIMACY_MAX = 5 					--Host will receive from 0 to this value in CIC.
+NDefines.NCountry.GIE_HOST_MIC_FROM_LEGITIMACY_MAX = 5					--Host will receive from 0 to this value in MIC.
+NDefines.NCountry.PARADROP_AIR_SUPERIORITY_RATIO = 0.75 --Min ratio of air superiority for paradropping
+NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
+NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
+NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_ON_CORE = 0.05 -- Attack bonus factor when fighting on cores.
+NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_ON_CORE = 0.05 -- Defense bonus factor when fighting on cores.
+NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
+NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
+NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0002			-- num convoys needed per fuel land lease
+NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 1 --was 0.3  	-- 	Multiplied to the difference between a country intel and the maximum value in the alliance to compute the amount of intel that flows from the alliance to that country.
+NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 1	             -- Number of days a war has to have existed before anyone can surrender in it
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 5000				-- pp cost to scorch a state
+-- NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
 
-NFocus = {
-    NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35				-- This much progress can be saved while not having a focus selected
-},
+NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)
+NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.09 -- base compliance grow
+NDefines.NResistance.COMPLIANCE_DECAY_AT_MAX_COMPLIANCE	= -0.075
+NDefines.NResistance.COMPLIANCE_GROWTH_HAS_CLAIM = 10 -- compliance growth buff if state has a claim
 
-NResistance = {
-	COMPLIANCE_GROWTH_BASE = 0.09, -- base compliance grow
-	COMPLIANCE_GROWTH_MIN = -100.0, -- min compliance grow
-	COMPLIANCE_GROWTH_MAX = 100.0, -- max compliance grow
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 200
+NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.25			-- How many convoys will be transferred on annexation
+NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 100	-- Ratio which % of army in field can be trained
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000 -- 		How many deployment lines minimum can be training
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0
 
-	COMPLIANCE_GROWTH_IS_AT_PEACE = 10, -- compliance growth buff at peace
-	COMPLIANCE_GROWTH_HAS_CLAIM = 10, -- compliance growth buff if state has a claim
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 75.0		-- Base amount of research points a country can save per slot.
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0.0
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999			--Max army experience a country can store
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999			--Max navy experience a country can store
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999				--Max air experience a country can store
+NDefines.NMilitary.PLANNING_DECAY = 0.01 --0.025 in tfb
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.0125 --0.125 in tfb				-- Amount of planning lost due to player manual order
+NDefines.NMilitary.PLANNING_MAX = 0.25 -- 0.2 in tfb                           	-- can get more from techs
+NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 4		-- Max height of regiments in division designer.
+NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2			-- Max width of support in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4		-- Max height of support in division designer.
+NDefines.NRailwayGun.ANNEX_RATIO = 1                -- How many railway guns will be transferred on annexation
+NDefines.NProduction.BASE_FACTORY_SPEED = 4       -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NBuildings.MAX_SHARED_SLOTS = 99
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.5	
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
+NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0 		   
+NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 5.0 
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5
 
-	COMPLIANCE_DECAY_AT_MAX_COMPLIANCE = -0.08, -- as compliance increases, it gets a decay rate depending on its value. compliance should stabilize at some value until its growth changes
-	COMPLIANCE_DECAY_PER_EXILE_LEGITIMACY = -0.015, -- higher legitimacy will give higher decay to compliance
-}
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35				-- This much progress can be saved while not having a focus selected
 
-NBuildings = {
-    MAX_SHARED_SLOTS = 99
-}
+NDefines.NOperatives.INTEL_NETWORK_MAX_INTELLIGENCE_AGENCY_DEFENSE_DETECTION_SCALE_FACTOR = 1.0	-- clamp the value from the multiplication of the above factor				-- Number of political power used to become Spy Master
+NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 0			-- Number of agency upgrades you need before becoming Spy Master
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.1 			-- max combat bonus that will apply when intel is high enough
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 40
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_ABSOLUTE_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 50
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MAXIMUMS = { 30, 30, 30, 30 }
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_ABSOLUTE_MAXIMUMS = 	{ 40, 40, 40, 40 }
 
-NProduction = {
-    BASE_FACTORY_SPEED = 3.0, 					-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-	BASE_FACTORY_SPEED_MIL = 2.75, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-	BASE_FACTORY_SPEED_NAV = 2.0, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-	POWERED_FACTORY_SPEED = 4, 					--Powered factory speed multiplier.
-	POWERED_FACTORY_SPEED_MIL = 3.5, 			--Powered factory speed multiplier.
-	POWERED_FACTORY_SPEED_NAV = 2.5, 			--Powered factory speed multiplier.
-	BASE_LICENSE_IC_COST = 0,							-- Base IC cost for lended license
-    LICENSE_IC_COST_YEAR_INCREASE = 0
-}
+-- The range bonus added to a fully motorized hub. This supply is added on top of the XXX_INITIAL_SUPPLY_FLOW defined above.
 
-NTechnology = {
-    BASE_TECH_COST = 100, -- Base cost for technology
-    BASE_TECH_COST_YEAR_INCREASE = 0.0, -- Yearly increase of base cost for technology
-    BASE_TECH_COST_CIVIL_WAR = 0.0, -- Cost increase of base cost for technology during civil war
-    BASE_TECH_COST_NATIONAL_FOCUS = 0.0, -- Cost increase of base cost for technology during national focus
-    BASE_TECH_COST_STABILITY = 0.0, -- Cost increase of base cost for technology per stability level
-    BASE_TECH_COST_WAR_SUPPORT = 0.0, -- Cost increase of base cost for technology per war support level
-    BASE_RESEARCH_POINTS_SAVED = 75.0		-- Base amount of research points a country can save per slot.
-},
-
-NMilitary = {
-    NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0.0
-    MAX_ARMY_EXPERIENCE = 9999			--Max army experience a country can store
-    MAX_NAVY_EXPERIENCE = 9999			--Max navy experience a country can store
-    MAX_AIR_EXPERIENCE = 9999				--Max air experience a country can store
-    PLANNING_DECAY = 0.01 --0.025 in tfb
-    PLAYER_ORDER_PLANNING_DECAY = 0.0125 --0.125 in tfb				-- Amount of planning lost due to player manual order
-    PLANNING_MAX = 0.3 -- 0.2 in tfb                           	-- can get more from techs
-	ARMY_FUEL_COST_MULT = 0.3,						-- fuel cost multiplier for all army related stuff
-	ARMY_COMBAT_FUEL_MULT =   1.0,					-- fuel consumption ratio in combat (plus ARMY_MOVEMENT_FUEL_MULT if you are also moving. ie offensive combat)
-	ARMY_TRAINING_FUEL_MULT = 0.5,					-- fuel consumption ratio while training
-	ARMY_MOVEMENT_FUEL_MULT = 1.0,					-- fuel consumption ratio while moving
-	ARMY_NAVAL_TRANSFER_FUEL_MULT = 0.0,			-- fuel consumption ratio while naval transferring
-	ARMY_STRATEGIC_DEPLOYMENT_FUEL_MULT = 0.0,		-- fuel consumption ratio while doing strategic deployment
-	ARMY_IDLE_FUEL_MULT = 0.0,						-- fuel consumption ratio while just existing
-	FUEL_EFFICIENCY_RAID_MULTIPLIER = 1.0,			-- convoy raid multiplier for fuel sunk
-},
-
-NAir = {
-	MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
-		1.0, -- AIR_SUPERIORITY
-		1.0, -- CAS
-		0.2, -- INTERCEPTION
-		1.0, -- STRATEGIC_BOMBER
-		1.0, -- NAVAL_BOMBER
-		1.0, -- DROP_NUKE
-		1.0, -- PARADROP
-		0.75, -- NAVAL_KAMIKAZE
-		1.0, -- PORT_STRIKE
-		1.0, -- ATTACK_LOGISTICS
-		1.0, -- AIR_SUPPLY
-		0.6, -- TRAINING
-		1.0, -- NAVAL_MINES_PLANTING
-		1.0, -- NAVAL_MINES_SWEEPING
-		1.0, -- RECON
-		1.0, -- NAVAL_PATROL
-		0.0, -- BARRAGE
-		0,0, -- NUCLEAR
-		0,0, -- SAM
-	},
-	MAX_FUEL_FLOW_MULT = 1.0, -- max fuel flow ratio for planes, which will be multiplied by supply
-
-	FUEL_COST_MULT = 0.2, -- fuel multiplier for all air missions
-
-    COMBAT_DAMAGE_SCALE = 0.75,							-- Higher value = more shot down planes
-	COMBAT_DAMAGE_SCALE_CARRIER = 3.5,					-- same as above but used inside naval combat for carrier battles
-},
-
-NNay = {
-	MISSION_FUEL_COSTS = {  -- fuel cost for each mission
-		0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
-		0.7, -- PATROL
-		1.0, -- STRIKE FORCE (does not cost fuel at base, and uses IN_COMBAT_FUEL_COST in combat. this is just for the movement in between)
-		1.0, -- CONVOY RAIDING
-		1.0, -- CONVOY ESCORT
-		1.0, -- MINES PLANTING
-		1.0, -- MINES SWEEPING
-		0.6, -- TRAIN
-		0.0, -- RESERVE_FLEET (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
-		0.7, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units)
-	},
-	
-	MISSION_FUEL_COSTS_PRIO_FACTOR = {  -- Prio fuel cost ratio for each mission. Highet value means that mission is more important to perform with regards to fuel usage
-		0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
-		0.7, -- PATROL
-		1.0, -- STRIKE FORCE (does not cost fuel at base, and uses IN_COMBAT_FUEL_COST in combat. this is just for the movement in between)
-		0.6, -- CONVOY RAIDING
-		0.6, -- CONVOY ESCORT
-		0.5, -- MINES PLANTING
-		0.3, -- MINES SWEEPING
-		0.6, -- TRAIN
-		0.0, -- RESERVE_FLEET (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
-		0.7, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units)
-	},
-
-	HOLD_MISSION_MOVEMENT_COST = 0.3,								-- ships on hold cost this much fuel while moving
-	ON_BASE_FUEL_COST = 0.0,										-- ships that waits at naval bases cost this ratio
-	STRIKE_FORCE_ON_BASE_FUEL_COST_FACTOR = 0.25,					-- fuel cost for naval strike mission in port
-	IN_COMBAT_FUEL_COST = 2.0,										-- ships in combat will get this ratio for fuel cost
-	TRAINING_FUEL_COST_FOR_ESCORT_SHIPS = 0.15,						-- ships that are on training mission but not training (ie they are at max xp and training will cancel at max xp) will consume this ratio of fuel
-
-	MAX_FUEL_FLOW_MULT = 2.0, -- max fuel flow ratio for ships, which will be multiplied by supply
-	FUEL_COST_MULT = 0.05, -- fuel multiplier for all naval missions
-
-	OUT_OF_FUEL_SPEED_FACTOR = -0.75,
-	OUT_OF_FUEL_RANGE_FACTOR = 0,
-	OUT_OF_FUEL_ATTACK_FACTOR = -0.5,
-	OUT_OF_FUEL_TORPEDO_FACTOR = -0.8,
-
-},
-
-NAI = {
-    DIPLOMACY_ACCEPTANCE_UPDATE_INTERVAL_DAYS = 4
-    DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 30
-    DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 90
-    DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 30
-    NAVAL_MISSION_DISTANCE_RECALCULATE_DAYS = 7
-    MAX_AAS_EVALUATIONS_PER_TICK = 20
-}
-
+NDefines.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
+	0.0/360.0, 1.0, 1.0,	--red
+	10.0/360.0, 1.0, 1.0,	--orange
+	60.0/360.0, 1.0, 1.0,	--yellow
+	120.0/360.0, 0.75, 1.0,	--green
+	180.0/360.0, 1.0, 1.0,	--turq
+	235.0/360.0, 1.0, 1.0,	--blue
+	260.0/360.0, 1.0, 1.0,	--dark purple
+	300.0/360.0, 1.0, 1.0,	--light purple
+	330.0/360.0, 0, 1.0		--white
 }
